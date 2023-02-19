@@ -6,12 +6,11 @@ import java.util.Random;
 public class Randoms implements Iterable<Integer> {
 
     protected Random random = new Random();
-    private int min, max;
+    private final int min, max;
 
     public Randoms(int min, int max) {
         this.min = min;
         this.max = max;
-        iterator();
     }
 
     @Override
